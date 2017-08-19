@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CustumViewSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TfN-G5-H81" customClass="CustomView" customModule="CustumViewSample" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ygq-SM-rw2">
+                                        <rect key="frame" x="87" y="310" width="200" height="46"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="200" id="CTk-T9-kgx"/>
+                                            <constraint firstAttribute="height" constant="46" id="J81-3x-cCj"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.98431372549999996" blue="0.25490196079999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="Ygq-SM-rw2" firstAttribute="centerX" secondItem="TfN-G5-H81" secondAttribute="centerX" id="243-kn-E6x"/>
+                                    <constraint firstItem="Ygq-SM-rw2" firstAttribute="centerY" secondItem="TfN-G5-H81" secondAttribute="centerY" id="7dk-gy-RvT"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="messageLabel" destination="Ygq-SM-rw2" id="tCK-oH-yt6"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="TfN-G5-H81" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="1br-v1-kNs"/>
+                            <constraint firstAttribute="trailing" secondItem="TfN-G5-H81" secondAttribute="trailing" id="Oyt-Y0-bBo"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="TfN-G5-H81" secondAttribute="bottom" id="Q0J-cB-DWT"/>
+                            <constraint firstItem="TfN-G5-H81" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="qe6-lY-6OL"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="selfView" destination="TfN-G5-H81" id="sq0-gE-nTB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+</document>
